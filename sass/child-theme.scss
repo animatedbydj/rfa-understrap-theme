@@ -1,0 +1,240 @@
+@import "theme/child_theme_variables"; // <------- Add your variables into this file. Also add variables to overwrite Bootstrap variables here
+@import "assets/bootstrap4"; // <------- Loads Bootstrap4
+@import "../src/sass/understrap/understrap/understrap"; // <------- Loads the UnderStrap defaults. Just a few classes to incorporate BS in WP
+@import "../src/sass/understrap/understrap/woocommerce"; // <------- Loads WooCommerce style fixes. Comment out if you aren't using WooCommerce
+
+// Optional files - If you don´t use the corresponding scripts/fonts comment em out
+@import "assets/font-awesome"; // <------- Font Awesome Icon font
+@import "assets/underscores"; // <------- Underscores media styles
+
+// Any additional imported files //
+@import "theme/child_theme"; // <------- Add your styles into this file
+@import "../src/sass/understrap/theme/contact-form7"; // <------- Loads some basic styling for contact form 7 plugin
+
+.nav-link {
+  color: $darkblue !important;
+  font-size: 22px !important;
+  font-family: "Raleway", sans-serif;
+}
+
+body {
+  font-family: "Montserrat", sans-serif;
+}
+p {
+  color: $darkblue;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  color: $darkblue-2;
+}
+
+.navbar-dark .navbar-toggler .navbar-toggler-icon {
+  background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' width='30' height='30' viewBox='0 0 30 30'%3e%3cpath stroke='rgba%283, 4, 94, 1%29' stroke-linecap='round' stroke-miterlimit='10' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/%3e%3c/svg%3e") !important;
+}
+.site {
+  &-header {
+    position: relative;
+    background-color: white;
+  }
+}
+.hero {
+  background-size: cover;
+  min-height: 80vh;
+  height: 90vh;
+  color: $white;
+  & h1 {
+    font-size: 87px;
+    max-width: 50%;
+    text-align: center;
+    color: $white;
+    @media (max-width: $smallbreakpoint) {
+      font-size: 50px;
+      max-width: 80%;
+    }
+  }
+  & h2 {
+    text-align: center;
+    font-size: 27px;
+    max-width: 50%;
+    color: $white;
+    @media (max-width: $smallbreakpoint) {
+      font-size: 18px;
+      max-width: 70%;
+    }
+  }
+  & h3 {
+    max-width: 50%;
+    font-size: 37px;
+    color: $white;
+    @media (max-width: $smallbreakpoint) {
+      font-size: 20px;
+      max-width: 65%;
+    }
+  }
+  & .cta-btn {
+    max-width: 50%;
+  }
+}
+
+.about {
+  min-height: 50vh;
+  & p {
+    max-width: 40ch;
+  }
+
+  &-video {
+    & iframe {
+      width: 80%;
+      height: 400px;
+      @media (max-width: $smallbreakpoint) {
+        width: 90%;
+        height: 300px;
+      }
+    }
+  }
+  ul {
+    list-style: none;
+    color: $darkblue-2;
+    li {
+      &:before {
+        content: ">";
+        margin-left: -20px;
+        margin-right: 10px;
+        font-weight: 800;
+      }
+    }
+  }
+}
+.secondary-card {
+  width: 90%;
+
+  & img {
+    width: 80%;
+    display: block;
+  }
+  &-text {
+    max-width: 40ch;
+    @media (max-width: $smallbreakpoint) {
+      max-width: 100%;
+    }
+  }
+}
+
+.blog {
+  min-height: 65vh;
+  background-repeat: no-repeat;
+  background-size: cover;
+  &-card {
+    background-color: $white;
+    height: 550px;
+    width: 100%;
+    &-body {
+      height: 100%;
+    }
+    &-title {
+      height: 15%;
+      max-width: 30ch;
+      & a {
+        color: $darkblue-2;
+      }
+    }
+    &-text {
+      height: 25%;
+      max-width: 35ch;
+    }
+    &-img {
+      height: 50%;
+      width: 100%;
+      & img {
+        width: 100%;
+      }
+    }
+    &-bottom {
+      height: 10%;
+      width: 100%;
+      color: $darkblue-2;
+      & a {
+        color: $blue;
+      }
+      & img {
+        max-width: 15px;
+      }
+    }
+  }
+  & h2 {
+    color: $white;
+    text-align: center;
+    @media (max-width: $smallbreakpoint) {
+      font-size: 1.5rem;
+    }
+  }
+}
+.entry-excerpt {
+  & .under-strap-read-more-link {
+    display: none !important;
+  }
+}
+
+.btn.under-strap-read-more-link {
+  display: none !important;
+}
+.proper-disposal {
+  position: relative;
+  min-height: 110vh;
+  background-image: url(../img/RFA-Bubble-Backgroundv2-01.png);
+
+  background-size: cover;
+  background-position: center;
+  @media (max-width: $smallbreakpoint) {
+    background-image: url(../img/rfa-home-bubbles-mobile-01.png);
+  }
+  & h2 {
+    // margin-top: 12rem;
+    // margin-left: 8rem;
+    // font-size: 2.3rem;
+    position: absolute;
+    top: 50%;
+    left: 45%;
+    @media (max-width: $mediumbreakpoint) {
+      top: 55%;
+      left: 35%;
+    }
+    @media (max-width: $smallbreakpoint) {
+      top: 40%;
+      left: 25%;
+    }
+  }
+}
+.footer {
+  min-height: 65vh;
+  background-image: url(../img/RFA-Gradient-Footer-Background-01.png);
+  width: 100%;
+  background-size: cover;
+  position: relative;
+  @media (max-width: $smallbreakpoint) {
+    background-image: url(../img/rfa-footer-background-mobile-01.png);
+  }
+  &-nav {
+    width: 100%;
+    & ul {
+      list-style: none;
+      width: 50%;
+    }
+    & a {
+      color: $white;
+    }
+  }
+  &-logo {
+    & img {
+      width: 250px;
+    }
+  }
+  &-bottom {
+    margin-top: 16%;
+  }
+}
