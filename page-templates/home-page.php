@@ -147,7 +147,7 @@ get_header();
 
  
         <div class="container py-5">
-            <h2 class="font-weight-bold my-5">Increasing Public Awareness About Flushability<br/> Will Lead to Real, Lasting Changes.</h2>
+            <h2 class="font-weight-bold mt-3 mb-4">Increasing Public Awareness About Flushability<br/> Will Lead to Real, Lasting Changes.</h2>
             <div class="row d-flex justify-content-center">
             <?php
               $args = array( 
