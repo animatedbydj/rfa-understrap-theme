@@ -11700,7 +11700,7 @@ h1, h2, h3, h4, h5, h6 {
     font-size: 2.5rem; }
     @media (max-width: 767.98px) {
       .about h2 {
-        font-size: 1.5rem; } }
+        font-size: 2rem; } }
   .about p {
     max-width: 40ch; }
   .about-video iframe {
@@ -11764,7 +11764,7 @@ h1, h2, h3, h4, h5, h6 {
     font-size: 2.5rem; }
     @media (max-width: 767.98px) {
       .blog h2 {
-        font-size: 1.5rem; } }
+        font-size: 2rem; } }
 
 .entry-excerpt .under-strap-read-more-link {
   display: none !important; }
