@@ -84,7 +84,11 @@ h6 {
     max-width: 50%;
   }
 }
-
+.custom-logo-link {
+  & img {
+    width: 200px;
+  }
+}
 .about {
   min-height: 50vh;
   & h2 {
@@ -247,7 +251,7 @@ h6 {
   }
   &-logo {
     & img {
-      width: 250px;
+      width: 200px;
     }
   }
   &-bottom {

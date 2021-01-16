@@ -11694,6 +11694,9 @@ h1, h2, h3, h4, h5, h6 {
   .hero .cta-btn {
     max-width: 50%; }
 
+.custom-logo-link img {
+  width: 200px; }
+
 .about {
   min-height: 50vh; }
   .about h2 {
@@ -11816,7 +11819,7 @@ h1, h2, h3, h4, h5, h6 {
     .footer-nav a {
       color: #fff; }
   .footer-logo img {
-    width: 250px; }
+    width: 200px; }
   .footer-bottom {
     margin-top: 16%; }
 
