@@ -29,16 +29,16 @@ $container = get_theme_mod( 'understrap_container_type' );
                 <!-- footer social nav -->
             <nav class="footer-nav d-flex justify-content-center">
               <ul class="d-flex justify-content-around">
-                  <li><a href="#" target="_blank" rel="noopener"><i class="fab fa-twitter fa-2x"></i></a></li>
-                  <li><a href="#" target="_blank" rel="noopener"><i class="fab fa-facebook fa-2x"></i></a></li>
-                  <li><a href="#" target="_blank" rel="noopener"> <i class="fab fa-instagram fa-2x"></i></a></li>
+                  <li><a href="<?php the_field('twitter_link'); ?>" target="_blank" rel="noopener"><i class="fab fa-twitter fa-2x"></i></a></li>
+                  <li><a href="<?php the_field('facebook_link'); ?>" target="_blank" rel="noopener"><i class="fab fa-facebook fa-2x"></i></a></li>
+                  <li><a href="<?php the_field('instagram_link'); ?>" target="_blank" rel="noopener"> <i class="fab fa-instagram fa-2x"></i></a></li>
               </ul>
           </nav>
            </div>
         </div>
         <div class="footer-bottom row d-flex justify-content-center font-weight-bold text-center">
            
-                <p>&copy; 2021 RFA | PRIVACY POLICY | CONTACT US</p>
+                <p>&copy; 2021 RFA | <a href="#">PRIVACY POLICY</a> | <a href="#">CONTACT US</a></p>
           
         </div>
     </div>

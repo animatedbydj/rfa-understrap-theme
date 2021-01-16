@@ -53,7 +53,7 @@ get_header();
             </div>
             <div class="row d-flex flex-wrap flex-column-reverse flex-lg-row align-items-center justify-content-around">
                 <div class="about-text col-11 col-lg-6">
-                    <h5 class="mb-3 font-weight-bold"><?php the_field('about_main_text_heading'); ?></h5>
+                    <h4 class="mb-3 font-weight-bold"><?php the_field('about_main_text_heading'); ?></h4>
                     <p><?php the_field('about_main_text_paragraph'); ?></p>
                    
                     <ul class="mb-3 ml-4">

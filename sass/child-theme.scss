@@ -24,6 +24,10 @@ p {
   color: $darkblue;
 }
 
+a {
+  color: $darkblue;
+}
+
 h1,
 h2,
 h3,
@@ -83,17 +87,23 @@ h6 {
 
 .about {
   min-height: 50vh;
+  & h2 {
+    font-size: 2.5rem;
+    @media (max-width: $smallbreakpoint) {
+      font-size: 1.5rem;
+    }
+  }
   & p {
     max-width: 40ch;
   }
 
   &-video {
     & iframe {
-      width: 80%;
+      width: 100%;
       height: 400px;
       @media (max-width: $smallbreakpoint) {
-        width: 90%;
-        height: 300px;
+        // width: 90%;
+        // height: 300px;
       }
     }
   }
@@ -135,20 +145,21 @@ h6 {
     width: 100%;
     &-body {
       height: 100%;
+      width: 100%;
     }
     &-title {
       height: 15%;
-      max-width: 30ch;
+      max-width: 25ch;
       & a {
         color: $darkblue-2;
       }
     }
     &-text {
-      height: 25%;
-      max-width: 35ch;
+      height: 30%;
+      max-width: 80%;
     }
     &-img {
-      height: 50%;
+      height: 45%;
       width: 100%;
       & img {
         width: 100%;
@@ -169,6 +180,7 @@ h6 {
   & h2 {
     color: $white;
     text-align: center;
+    font-size: 2.5rem;
     @media (max-width: $smallbreakpoint) {
       font-size: 1.5rem;
     }
@@ -181,6 +193,10 @@ h6 {
 }
 
 .btn.under-strap-read-more-link {
+  display: none !important;
+}
+.btn,
+.wpcf7 input[type="submit"] {
   display: none !important;
 }
 .proper-disposal {

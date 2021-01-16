@@ -11647,6 +11647,9 @@ body {
 p {
   color: #03045e; }
 
+a {
+  color: #03045e; }
+
 h1, h2, h3, h4, h5, h6 {
   color: #03045e; }
 
@@ -11693,15 +11696,16 @@ h1, h2, h3, h4, h5, h6 {
 
 .about {
   min-height: 50vh; }
+  .about h2 {
+    font-size: 2.5rem; }
+    @media (max-width: 767.98px) {
+      .about h2 {
+        font-size: 1.5rem; } }
   .about p {
     max-width: 40ch; }
   .about-video iframe {
-    width: 80%;
+    width: 100%;
     height: 400px; }
-    @media (max-width: 767.98px) {
-      .about-video iframe {
-        width: 90%;
-        height: 300px; } }
   .about ul {
     list-style: none;
     color: #03045e; }
@@ -11731,17 +11735,18 @@ h1, h2, h3, h4, h5, h6 {
     height: 550px;
     width: 100%; }
     .blog-card-body {
-      height: 100%; }
+      height: 100%;
+      width: 100%; }
     .blog-card-title {
       height: 15%;
-      max-width: 30ch; }
+      max-width: 25ch; }
       .blog-card-title a {
         color: #03045e; }
     .blog-card-text {
-      height: 25%;
-      max-width: 35ch; }
+      height: 30%;
+      max-width: 80%; }
     .blog-card-img {
-      height: 50%;
+      height: 45%;
       width: 100%; }
       .blog-card-img img {
         width: 100%; }
@@ -11755,7 +11760,8 @@ h1, h2, h3, h4, h5, h6 {
         max-width: 15px; }
   .blog h2 {
     color: #fff;
-    text-align: center; }
+    text-align: center;
+    font-size: 2.5rem; }
     @media (max-width: 767.98px) {
       .blog h2 {
         font-size: 1.5rem; } }
@@ -11764,6 +11770,11 @@ h1, h2, h3, h4, h5, h6 {
   display: none !important; }
 
 .btn.under-strap-read-more-link, .wpcf7 input.under-strap-read-more-link[type=submit] {
+  display: none !important; }
+
+.btn,
+.wpcf7 input[type=submit],
+.wpcf7 input[type="submit"] {
   display: none !important; }
 
 .proper-disposal {

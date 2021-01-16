@@ -3,7 +3,7 @@
                   <div class="blog-card-body text-center d-flex flex-column justify-content-around align-items-center">
                   <header class="entry-header">
 
-		<?php the_title( '<h5 class="entry-title blog-card-title font-weight-bold mb-4">', '</h5>' ); ?>
+		<?php the_title( '<h5 class="entry-title blog-card-title font-weight-bold mb-4"><a href="' . esc_url( get_permalink() ) . '" rel="bookmark">', '</a> </h5>' ); ?>
 
 	
 	</header>
